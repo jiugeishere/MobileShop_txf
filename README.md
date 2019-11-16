@@ -74,7 +74,7 @@ Git仓库中MobileShop文件为商场APP实验源文件
 </div>
 <div style="float:left">
 <img src="https://github.com/jiugeishere/66ds/blob/master/a/8.jpg" alt="" width="240dp" height="400dp">
-</div><br>
+</div>
 <div style="float:left">
 <img src="https://github.com/jiugeishere/66ds/blob/master/a/9.jpg" alt="" width="240dp" height="400dp">
 </div>
