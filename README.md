@@ -26,9 +26,18 @@ Git仓库中MobileShop文件为商场APP实验源文件
     //recyclerview列表
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     
-2.语言使用注意：
+2.使用注意：
 
 （1）ButterKnife使用方法：
-          
-            1.绑定ButterKnife，因为实验基本上是在基类中做的初始化，所以在基类中绑定即可，后面继承基类的就不用绑定了。
-            ![Image text](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
+1.绑定ButterKnife，因为实验基本上是在基类中做的初始化，所以在基类中绑定即可，后面继承基类的就不用绑定了。
+2.进行类似@BindView(R.id.button)的注释操作，和@click等点击操作
+
+（2）Recyclewer的适配器：
+    创建Adapter继承自RecycleView的adapter，并且泛型为创建Adapter的ViewHolder；
+    创建数据源，并且创建含参构造方方法用于向Adapter内部传入数据；
+    创建内部类AdapterViewHolder继承自RecycleView的ViewHolder，并且在内部初始化item数据；
+    重写onCreateViewHolwer(ViewGroup parent,int viewType)方法进行加载布局；
+    重写onBindViewHolder（WangZheAdaoter.ViewHolder holder, int position）方法进行数据的适配；
+    重写getItemCount方法，返回数据源大小；
+    
+（3）
