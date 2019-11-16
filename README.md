@@ -26,13 +26,15 @@ Git仓库中MobileShop文件为商场APP实验源文件
     //recyclerview列表
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     
-2.使用注意：
+2.主要内容：
 
 （1）ButterKnife使用方法：
-1.绑定ButterKnife，因为实验基本上是在基类中做的初始化，所以在基类中绑定即可，后面继承基类的就不用绑定了。
-2.进行类似@BindView(R.id.button)的注释操作，和@click等点击操作
+
+    1.绑定ButterKnife，因为实验基本上是在基类中做的初始化，所以在基类中绑定即可，后面继承基类的就不用绑定了。
+    2.进行类似@BindView(R.id.button)的注释操作，和@click等点击操作
 
 （2）Recyclewer的适配器：
+
     创建Adapter继承自RecycleView的adapter，并且泛型为创建Adapter的ViewHolder；
     创建数据源，并且创建含参构造方方法用于向Adapter内部传入数据；
     创建内部类AdapterViewHolder继承自RecycleView的ViewHolder，并且在内部初始化item数据；
@@ -40,4 +42,19 @@ Git仓库中MobileShop文件为商场APP实验源文件
     重写onBindViewHolder（WangZheAdaoter.ViewHolder holder, int position）方法进行数据的适配；
     重写getItemCount方法，返回数据源大小；
     
-（3）
+（3）RxAndroid+RxJava+Gson+retrofit+okhttp初步搭建android网络请求框架
+     
+     1.首先build.gradle文件中引用依赖库
+     2.通过Builder模式创建Retrofit对象
+     3.定义或者通过GsonFormat插件把Json字符串生成实体类(本例中的实体类MemberEntity)
+     4.定义接口
+     5.创建接口实例，调用接口并通过观察者模式获取数据
+
+3.其他注意：
+
+     本实验相关项：
+     maven { url 'http://maven.aliyun.com/nexus/content/groups/public/'} 包下载链接为阿里库
+     classpath 'com.android.tools.build:gradle:3.0.0' Gradle版本
+     compileSdkVersion 27 SDK版本
+     
+ 4.结果显示：
