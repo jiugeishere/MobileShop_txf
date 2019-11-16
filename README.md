@@ -32,8 +32,10 @@ Git仓库中MobileShop文件为商场APP实验源文件
 
     1.绑定ButterKnife，因为实验基本上是在基类中做的初始化，所以在基类中绑定即可，后面继承基类的就不用绑定了。
     2.进行类似@BindView(R.id.button)的注释操作，和@click等点击操作
+    
  BaseActivity绑定源码如下：
 ![Image text](https://github.com/jiugeishere/66ds/blob/master/a/1.png)
+
 （2）Recyclewer的适配器：
 
     创建Adapter继承自RecycleView的adapter，并且泛型为创建Adapter的ViewHolder；
@@ -42,6 +44,7 @@ Git仓库中MobileShop文件为商场APP实验源文件
     重写onCreateViewHolwer(ViewGroup parent,int viewType)方法进行加载布局；
     重写onBindViewHolder（WangZheAdaoter.ViewHolder holder, int position）方法进行数据的适配；
     重写getItemCount方法，返回数据源大小；
+    
 适配器编译如下
 ![Image text](https://github.com/jiugeishere/66ds/blob/master/a/2.png)
 ![Image text](https://github.com/jiugeishere/66ds/blob/master/a/3.png)
@@ -53,6 +56,7 @@ Git仓库中MobileShop文件为商场APP实验源文件
      3.定义或者通过GsonFormat插件把Json字符串生成实体类(本例中的实体类MemberEntity)
      4.定义接口
      5.创建接口实例，调用接口并通过观察者模式获取数据
+     
 网络请求编译如下
 ![Image text](https://github.com/jiugeishere/66ds/blob/master/a/4.png)
 ![Image text](https://github.com/jiugeishere/66ds/blob/master/a/5.png)
@@ -65,15 +69,12 @@ Git仓库中MobileShop文件为商场APP实验源文件
      
  4.结果显示：
 
-<div style="float:left;margin-right:50px" >
+<div style="float:left" >
 <img src="https://github.com/jiugeishere/66ds/blob/master/a/6.jpg" alt="" width="240dp" height="400dp">
-</div>
-<div style="float:left;margin-right:50px"> 
-<img src="https://github.com/jiugeishere/66ds/blob/master/a/10.jpg" alt="" width="240dp" height="400dp">
 </div>
 <div style="float:left">
 <img src="https://github.com/jiugeishere/66ds/blob/master/a/8.jpg" alt="" width="240dp" height="400dp">
-</div>
+</div><br>
 <div style="float:left">
 <img src="https://github.com/jiugeishere/66ds/blob/master/a/9.jpg" alt="" width="240dp" height="400dp">
 </div>
