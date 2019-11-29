@@ -32,7 +32,7 @@ public class AdActivity extends BaseActivity {
             }
         });
         ImageView imageView=(ImageView)findViewById(R.id.iv_image);
-        String url="https://p5.ssl.qhimgs1.com/sdr/400__/t01c05ea0e089c8387f.jpg";//图片链接，为Imageloader方式加载，其他还可通过HttpURLConnection、HttpClients、Volley、XUtils、OkHttp等方式进行加载网络图片。
+        String url="http://abc.2008php.com/09_Website_appreciate/10-08-09/12813557013.jpg";//图片链接，为Imageloader方式加载，其他还可通过HttpURLConnection、HttpClients、Volley、XUtils、OkHttp等方式进行加载网络图片。
 
         ImageLoader.getInstance().displayImage(url, imageView, new ImageLoadingListener() {     //将jumpThread传到handler中进行执行
             @Override
