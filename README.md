@@ -33,7 +33,7 @@ Git仓库中MobileShop文件为商场APP实验源文件
     1.绑定ButterKnife，因为实验基本上是在基类中做的初始化，所以在基类中绑定即可，后面继承基类的就不用绑定了。
     2.进行类似@BindView(R.id.button)的注释操作，和@click等点击操作
     
- BaseActivity绑定源码如下：
+ BaseFragment绑定源码如下：
 ![Image text](https://github.com/jiugeishere/66ds/blob/master/a/1.png)
 
 （2）Recyclewer的适配器：
